@@ -99,6 +99,12 @@ Background: #222222
     height auto;
 }
 
+img{
+   width: 100%;
+   height: auto;
+   max-width: 500px;
+}
+
 body {
   background-color: #222222;
 }
