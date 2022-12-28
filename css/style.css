@@ -54,7 +54,7 @@ Background: #222222
 }
 
 #nav a {
-    color: ###CCB9A9;
+    color: #CCB9A9;
     background: transparent;
     text-decoration: none;
 }
@@ -62,6 +62,9 @@ Background: #222222
 #nav a.active {
     color: #E6C254;
 }
+
+a:hover {
+  color: #E6C254;}
 
 #sidepic {
     float: right;
