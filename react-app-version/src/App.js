@@ -106,7 +106,7 @@ function App() {
             <h1 id="name">Benny Nguyen</h1>
             <a href='./nguyenbenny_resume.pdf' id="ResumeLink"><strong>Link to my Resume.</strong></a>
             <p>
-              I am a recent Ph.D. graduate from the <a target="_blank" href="https://cogsci.ucmerced.edu/">Cognitive and Information Sciences Department</a> at the University of California, Merced where I was advised by <a href="https://ucmerced.academia.edu/MichaelSpivey">Dr. Michael J. Spivey</a>. My dissertation examinined the complexity matching of gesture and gaze between a human listener and speaking virtual agent(s).<br></br><br></br>
+              I am a recent Ph.D. graduate from the <a href="https://cogsci.ucmerced.edu/">Cognitive and Information Sciences Department</a> at the University of California, Merced where I was advised by <a href="https://ucmerced.academia.edu/MichaelSpivey">Dr. Michael J. Spivey</a>. My dissertation examinined the complexity matching of gesture and gaze between a human listener and speaking virtual agent(s).<br></br><br></br>
               While in graduate school, I spent a summer working at the <a href="https://allofus.nih.gov/">National Institutes of Health, All of Us Research Program</a> as a <a href="https://codingitforward.com/fellowship">Civic Digital Fellow</a><br></br><br></br>
               Prior to graduate school, I received my Bachelor’s degree in Psychology from <a href="https://www.grinnell.edu/">Grinnell College</a> and worked briefly at the University of Michigan's <a href="https://studentlife.umich.edu/">Student Life Assessment and Research Office</a>.<br></br><br></br>
               At Grinnell, I did internships at <a href="https://mpulse.com/">mPulse Mobile</a> (personalized healthcare text messaging service company in Los Angeles) and <a href="https://www.act.org/">ACT, Inc.</a> (testing company), and worked with <a href="https://www.grinnell.edu/user/ralstonc">Dr. Christopher Ralston</a> on refining a scale for assessing juvenile sexual offense recidivism.
@@ -121,7 +121,21 @@ function App() {
           <img id="Grinnell" src="/images/grinnell.svg"></img>
         </div>
         <div className="section" id="Projects" ref={projectRef}>
+          <div className="projectBox">
+            <a className = "projectLink" target="_self" href="./projects/project_template.html">LINK TESTER</a>
+          </div>
+          <div className="projectBox">
 
+          </div>
+          <div className="projectBox">
+
+          </div>
+          <div className="projectBox">
+
+          </div>
+          <div className="projectBox">
+
+          </div>
         </div>
         <div className="section" id="Contact" ref={contactRef}>
           <a href="mailto:b3njaminnguyen@gmail.com"><img id="socialmedia" src="/images/gmail.png"></img></a>

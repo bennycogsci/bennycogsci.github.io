@@ -65,6 +65,14 @@ p {
   color: #362C44;
 }
 
+.projectBox {
+  background-color: #362C44;
+  border: none;
+  border-radius: 20px;
+  width: 30vw;
+  color: #F5F6F5;
+}
+
 #Introduction {
   background-color: #F5F6F5;
   font-size: large;
@@ -74,6 +82,12 @@ p {
 
 #Projects {
   background-color: #97AAB4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
 }
 
 #Contact {
@@ -81,6 +95,7 @@ p {
   height: 30vh;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #UCM {
@@ -113,6 +128,5 @@ p {
   height: 10vw;
   width: auto;
   position: relative;
-  left: 10vw;
   padding: 2vw;
 }
