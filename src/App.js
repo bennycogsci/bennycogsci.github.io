@@ -123,7 +123,7 @@ function App() {
         <div className="section" id="Projects" ref={projectRef}>
           <div className="projectBox">
             <br></br><br></br>
-            <img className = "projectImage" src="../images/complex_f1.png"></img>
+            <img className = "projectImage" src="../images/complex_f4.png"></img>
             <a className = "projectLink" target="_self" href="./projects/project_complex.html">Complexity in gesture and gaze between human and virtual agent interlocutors</a><br></br>
           </div>
           <div className="projectBox">
