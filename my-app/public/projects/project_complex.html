@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Complexity Matching Project">
+        <meta name="keywords" content="cogsci, benny, nguyen, benny cogsci, bennycogsci, projects, portfolio">
+        <meta name="author" content="Benny Nguyen">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./project.css">
+    </head>
+
+    <body>
+        <div id="page-container">
+            <h2 id="title">Complexity in Gesture and Gaze between Human and Virtual Agent Interlocutors</h2>
+            <button type="button" class="collapsible" style="z-index: +1">Aims & Question</button>
+            <div class="content" style="display: block;">
+                <p>Complexity matching is a phenomena of variability converging between interlocutors. The variability is measured by complexity measures (e.g. Allan Factors, DFA) and has been found in human-human speech, gesture, and movement during collaboration and conversation. </p>
+                <p>This project sought to experimentally operationalize complexity matching, as previous work has only been able to observe its presence. To accomplish this, we used virtual agents and created conditions of differently complex movements for these agents.</p>
+                <p>This project was largely exploratory: attempting to find cross-modal complexity matching, the use of virtual interlocutors, and examining gaze/eye-tracking data in this framework.</p>
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Conclusion & Outcomes</button>
+            <div class="content" style="display: block;">
+                <p>We did not observe the complexity measures in participant gaze, and therefore no complexity matching between participant gaze and virtual agent gesture.</p><p><strong>
+                  Nevertheless, this project makes some contributions: pioneering the experimental manipulation of complexity, exploring different methods of parsing eye-tracking data for complexity analysis, and examining at complexity matching in a human-virtual agent context.</strong>
+                </p>
+                <p>To those ends, we conclude that virtual agent fidelity may occlude any potential complexity effects and that future work should create unique complexity-retaining communicative signals to rule out alternative explanations that differences, or lack thereof, are due to the particular trajectory used. This project's methodologies lay the groundwork for that iterative creation.</p>
+                
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Figures</button>
+            <div class="content">
+              <h3>Complexity of Participant Eye-Movements</h3>
+              <img class="projectFig" src="../images/complex_f2.png">
+              <p>Individual participants' eye-movement Allan Factor by timescale for each condition (row-wise, by color), and for each event-counting methods (column-wise, left: fixations greater than 100ms, right: saccade amplitudes greater than 9 pixels). Each participant contributed one slope for all 3 conditions, and therefore are represented in every graph. In sum, the slopes were not significantly different across conditions.</p>
+              <h3>Comprehension Score by Condition</h3>
+              <img class="projectFig" src="../images/complex_f3.png">
+              <p>Distribution of comprehension scores across condition. There is a bimodality indicating low participant engagement or attention. Analyses were conducted with and without these low comprehension scorers, using a 50% score exclusion threshold, and did not change any result.</p>
+              <h3>Complexity Matching between Participant Gaze and Virtual Agent Gesture</h3>
+              <img class="projectFig" src="../images/complex_f4.png">
+              <p>Distributions of Complexity Matching score by event counting method.</p>
+              <h3>GODSPEED Questionnaire Responses by Condition</h3>
+                <img class="projectFig" src="../images/complex_f5.png">
+              <p>Average 5-point Likert ratings on the GODSPEED questionnaire items by condition. One term in each pair was placed at the respective end of the rating scale. Statistically significant comparisons between conditions are denoted with an asterisk and the p-value is reported.</p>
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Experiment Information</button>
+            <div class="content">
+              <h3>Participants</h3>
+              <p>Thirty-three participants were recruited from the University of California, Merced and compensated with course-credit.</p>
+              <h3>Conditions</h3>
+              <p>Virtual Agent Movement Conditions:<li>Original Movement: Retains original complexity</li><li>Artificial: Experimentally constructed, <strong>Same</strong> complexity as Original condition, <br> Same overall variability (mean, standard deviation)</li><li>Shufflied: Experimentally constructed, <strong>Different complexity</strong> as Original condition,<br> Same overall variability (mean, standard deviation)</li></p>
+              <p>Participants saw 3 narratives, each with a different virtual agent movement condition.</p>
+              <h3>Materials</h3>
+              <p>Participants viewed 3 narratives, 5-7 min., obtained from the <a href="https://github.com/languageMIT/naturalstories">Natural Stories Corpus</a>. These were read to them by a virtual agent whose movement belonged to one of the 3 conditions listed above. As they viewed, their gaze was tracked using an EYELINK-II machine. The virtual agent movements were created in Blender and the audio was standard across conditions (recording by a researcher).</p>
+
+            </div>
+            <a href="http://www.bennycogsci.github.io"><button id="returnButton">Return</button></a>
+        </div>
+
+        <script>
+         var coll = document.getElementsByClassName("collapsible");
+         var i;
+         for (i = 0; i < coll.length; i++) {
+           coll[i].addEventListener("click", function() {
+             this.classList.toggle("colactive");
+             var content = this.nextElementSibling;
+             if (content.style.display == "block") {
+               content.style.display = "none";
+             } else {
+               content.style.display = "block";
+             }
+           });
+         }
+         </script>
+    </body>
+</html>

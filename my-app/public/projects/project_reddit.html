@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Reddit Project">
+        <meta name="keywords" content="cogsci, benny, nguyen, benny cogsci, bennycogsci, projects, portfolio">
+        <meta name="author" content="Benny Nguyen">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./project.css">
+    </head>
+
+    <body>
+        <div id="page-container">
+            <h2 id="title">Evaluating the efficacy of forum (Reddit) content moderation policy using Natural Language Processing</h2>
+            <button type="button" class="collapsible" style="z-index: +1">Aims & Question</button>
+            <div class="content" style="display: block;">
+                <p>A Reddit forum on the topic of eating disorders ('r/proED/') was closed in 2018 due to content policy violation. At the time, this forum was the largest subreddit on this topic.</p>
+                <p>This project explores the consequences of this wholesale shutdown on surrounding subreddits on this topic, to ask whether closing the subreddit was an effective strategy for content moderation.</p>
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Conclusion & Outcomes</button>
+            <div class="content" style="display: block;">
+                <p><strong>We found that the content of other subreddits on the topic became more similar to r/proED following its closure. This suggest that closing a forum is not an effective strategy of moderation.</strong></p>
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Figures</button>
+            <div class="content">
+              <h3>Dimensionality Reduced GLoVE embeddings of forum posts Before r/proED Closure<br>Left: Subreddit Belonging, Right: Topic areas using Latent Semantic Analysis</h3>
+              <img class="projectFig" src="../images/reddit_f2.png">
+              <h3>Dimensionality Reduced GLoVE embeddings of forum posts After r/proED Closure<br>(Includes Data from Before Closure)<br>Left: Subreddit Belonging, Right: Topic areas using Latent Semantic Analysis</h3>
+              <img class="projectFig" src="../images/reddit_f3.png">
+              <h3>Dimensionality Reduced GLoVE embeddings of forum posts After r/proED Closure<br>(Includes Data from Before Closure)<br>Left: Subreddit Belonging, Right: Subreddit Belonging Grouped by Before/After Closure</h3>
+              <img class="projectFig" src="../images/reddit_f1.png">
+              <h3>Forum Misclassification Results from Logistic Regression</h3>
+              <img class="projectFig" src="../images/reddit_f4.png">
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Analyses</button>
+            <div class="content">
+              <p>We examined the following subreddits on the topic of eating disorders, chosen for their size at time of analysis: r/proED, r/EatingDisorders, r/fuckeatingdisorders, r/EDAnonymous. These posts underwent several pre-processing steps including spell-correction, lemmatization, and forum-specific abbreviation or convention filtering.</p>
+              <p>Using pre-trained GLoVE embeddings, we created vector representations of forum posts.</p>
+              <p>With these vector embeddings, we conducted Latent Semnatic Analysis, testing various topic amounts for interpretibility.</p>
+              <p>We dimensionality reduced these embeddings using t-SNE to project them onto 2-dimensional space for visualization.</p>
+              <p>Jensen-Shannon divergence distribution was analyzed on all the tokens for posts grouped by r/proED belonging.</p>
+              <p>A logistic regression classifying posts by r/proED belonging by their vector representation/post embedding was conducted and whose misattribution results can be found above.</p>
+
+            </div>
+            <a href="http://www.bennycogsci.github.io"><button id="returnButton">Return</button></a>
+        </div>
+
+        <script>
+         var coll = document.getElementsByClassName("collapsible");
+         var i;
+         for (i = 0; i < coll.length; i++) {
+           coll[i].addEventListener("click", function() {
+             this.classList.toggle("colactive");
+             var content = this.nextElementSibling;
+             if (content.style.display == "block") {
+               content.style.display = "none";
+             } else {
+               content.style.display = "block";
+             }
+           });
+         }
+         </script>
+    </body>
+</html>

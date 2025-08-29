@@ -1,38 +1,161 @@
-.App {
+.top-spacer {
+  height: 0vh;
+}
+
+.bottom-spacer {
+  height: 30vh;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  color: #D67D8B;
+  background-color: #F5F6F5;
+}
+
+.header_link {
+  padding: 20px;
+  color: #D67D8B;
+  font-weight: bold;
+  font-size: x-large;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  outline: none;
+  background-color: #F5F6F5;
+}
+
+.selected {
+  border-bottom: 3px solid #C45A3F;
+  color: #C45A3F;
+}
+
+.section {
+  min-height: 100vh;
+  
+}
+
+.textContainer {
+  padding: 50px;
+}
+
+a:link {
+  color: #362C44;
+  text-decoration: underline;
+  
+}
+
+a:hover {
+  color: #C45A3F;
+}
+
+a:visited {
+  color: #C45A3F;
+}
+
+p {
+  color: #362C44;
+}
+
+.projectBox {
+  background-color: #362C44;
+  border-radius: 20px;
+  width: 30vw;
+  color: #F5F6F5;
+  display: block;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.projectLink {
+  font-size: xx-large;
+  display: block;
+  padding: 2vh;  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.projectLink:link {
+  color: #C45A3F;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.projectLink:hover {
+  color:#D67D8B;
+  text-decoration: underline;
+}
+
+.projectLink:visited {
+  color:#D67D8B;
+  text-decoration: none;
+}
+
+.projectImage {
+  width: 25vw;
+  border-radius: 20px;
+}
+
+#Introduction {
+  background-color: #F5F6F5;
+  font-size: large;
+  padding-right: 40vw;
+  padding-left: 5vw;
+}
+
+#Projects {
+  background-color: #97AAB4;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  max-width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+#Contact {
+  background-color: #362C44;
+  min-height: 30vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#UCM {
+  position: absolute;
+  width: 15vw;
+  top: 20vh;
+  right: 25vw;
+}
+
+#Grinnell {
+  position: absolute;
+  width: 15vw;
+  top: 20vh;
+  right: 10vw;
+}
+
+#ResumeLink {
+  color: #D67D8B;
+}
+
+#ResumeLink:hover {
+  color: #C45A3F;
+}
+
+#name {
+  color: #362C44;
+}
+
+#socialmedia {
+  height: 10vw;
+  width: auto;
+  position: relative;
+  padding: 2vw;
 }

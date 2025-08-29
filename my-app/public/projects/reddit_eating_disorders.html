@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Projects for Benny Nguyen Personal Website">
+        <meta name="keywords" content="cogsci, benny, nguyen, benny cogsci, bennycogsci, projects, portfolio">
+        <meta name="author" content="Benny Nguyen">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Benny Nguyen // Art</title>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    </head>
+
+    <body>
+        <div id="page-container">
+            <div id="header">
+                <h1>
+                    BENNY<br>NGUYEN
+                </h1>
+            </div>
+            <div id="nav">
+                <a href="../../index.html"> Home </a> /
+                <a href="../work.html">Work</a> /
+<!---                <a href="/projects/">Projects</a> /--->
+                <a target="_blank" href="../nguyen_benny_cv.pdf">CV</a> /
+                <a href="../art.html">Art</a> /
+                <a href="../projects.html" class="active">Projects</a>
+
+            </div>
+            <div id="content">
+              <h2 id="reddit_ed">Eating Disorders Subreddits</h2></div>
+              <button type="button" class="collapsible" style="z-index: +1">Background</button>
+              <div class="content">
+              <p>
+                 The conversation around the impact of social media use on eating disorders (EDs) has been fraught with debate. Some of the motivation for concern is due to the high volume of exposure to edited and filtered photos, which has been shown to promote unrealistic body image expectations (Ciao, Loth, & Neumark-Sztainer, 2014; Lonergan et al., 2020). Shifts telecommunication for remote learning and work, social-isolation and health anxieties brought by the COVID-19 pandemic, have been connected to higher social media use and consequently, ED symptom exacerbation (Weissman, & Hay, 2022). On the other hand, social media offers an opportunity for people with EDs to connect with others who share their experiences (Leonidas & dos Santos, 2014). The anonymity and peer-to-peer support in online spaces has been shown to facilitate sharing and empathy between people living with health conditions (Hargreaves, Bath, Duffin, & Ellis, 2018). The impact of the exchanges afforded by online communities is also controversial. Some researchers and clinicians believe that these communities promote harmful behaviors by normalizing extreme thoughts and actions and serve negatively in the maintenance of disordered eating (Sowles et al., 2018; Osler & Krueger, 2021). Others, however, believe these spaces provide needed community and openness about EDs, and do not hinder, but rather promote recovery and harm-reduction (Bohrer, Foyee, & Jewell, 2020).
+              </p>
+
+              <p>
+                 One space to form online communities is the social forum platform Reddit. Reddit is comprised of individual forums called 'subreddits' that revolve around some topic. Many of the largest online communities to discuss personal experiences with EDs exist on Reddit. Around mid-November 2018, a large subreddit, 'r/proED' short for 'pro-eating disorder' (approximately 32,000 subscribed users at the time of closing) was closed. While the subreddit name is alarming, according to Reddit users’ anecdotes, 'r/proED' explicitly did not seek to glorify maladaptive behaviors, rather was a space to provide needed social support. The exact reasons why 'r/proED' was closed and whether community members or moderators were warned or notified remains opaque.
+              </p>
+              <p>
+                 We suspect by virtue of existing alongside other subreddits about the same EDs, namely 'r/EatingDisorders', 'r/fuckeatingdisorders', and 'r/EDAnonymous', that 'r/proED' provided a content niche, or unique discussions about disorders. These other ED subreddits were chosen as they are presently some of the largest subreddits on the topic of eating disorders, each with over 25,000 members, and the largest, ‘r/EDAnonymous’ with over 80,000 members at the time of this writing. This study uses data from these subreddits to answer the following questions: Did 'r/proED' provide a content niche different from other ED subreddits? Secondly, was 'r/proED''s content more harmful than these other subreddits? When 'r/proED' closed, did the other subreddits begin filling the newly opened niche? In other words, did the content from other subreddits become more similar to 'r/proED' after its closing?
+              </p>
+              <p></p>
+              </div>
+              <p></p>
+              <button type="button" class="collapsible" style="z-index: +1">Methods</button>
+              <div class="content">
+                 <h3 id="DataSource">Data Source</h3>
+                 <p>
+                    While Reddit offers public access to new posts through their application programming interface (API), data from subreddits that have been closed are not accessible. Therefore, we look to Pushshift.io, which is a public effort to duplicate Reddit's content on an openly accessible database, to retrieve our data of interest (Baumgartner, Zannettou, Keegan, Squire, & Blackburn, 2020). The Pushshift.io database has been recording Reddit posts since 2015. We used the Pushshift API to obtain past posts from 'r/proED' and our other ED subreddits of interest.
+                 </p>
+
+                 <h3 id="Timeframes">Timeframes of Interest</h3>
+                 <p>Data from all subreddits were extracted from 3 years leading up to the closing of 'r/proED', specifically from November 1st, 2015 to November 1st, 2018. In order to characterize the consequences of 'r/proED's closing, data was also extracted from November 31st, 2018 to November 31st, 2019. To speak to whether our observations in post content persisted or changed due to the COVID-19 pandemic, a third range of data was extracted from November 31st, 2019 to November 31st, 2021.</p>
+
+                 <h3 id="JSD">Jensen-Shannon Divergence</h3> <p> The content of subreddit posts can be represented and described in many forms, and in this initial exploratory analysis, many methods were pursued. As an initial improvement on plain word-frequencies, we used the information theory measure Jensen-Shannon Divergence (JSD). JSD is a value describing the difference between two probability distributions (Mehri, Jamaati, & Mehri, 2015). Here, we are comparing the probability distribution of unique words in 'r/proED' to the probability distribution of those same words in the other ED subreddits. Our unit of comparison are unique word probabilities, therefore, we are able to extract individual word contributions to overall JSD (Lu, Henchion, & Namara, 2018). Words that score highly on JSD indicate that said word is highly informative for discriminating whether a post belongs to the subreddit ‘r/proED’ or to the other ED subreddits.</p>
+
+                <h3 id="LSA">Latent Semantic Analysis</h3> <p> Another method used to characterize subreddit posts content was latent semantic analysis (LSA). LSA relies on term-document co-occurrences to draw document groupings, for which subjective observers interpret into a coherent topic (Landauer, Foltz, & Laham, 1998). The number of topics drawn is arbitrary, and therefore multiple iterations are performed to yield coherent and meaningful topics.</p>
+
+                <h3 id="tSNE">Subreddit GloVE Embeddings and t-SNE Dimensionality Reduction</h3> <p> We also created post embeddings, or numeric vector representations, for each subreddit post. To do so, we averaged across individual word embeddings retrieved from Google's pre-trained GloVe model (Pennington, Socher, & Manning, 2014). The GloVe model used was trained on six billion tokens and each word was 300 dimensions in size. </p>
+                <p>The resultant post embeddings from averaging across the GloVe word embeddings retained their dimensionality, 300 dimensions. In order to visualize these embeddings, we used t-distributed stochastic neighbor embeddings (t-SNE) to reduce our post embeddings into two dimensions. t-SNE reduces the dimensionality of high-dimensional objects by using pairwise similarities to determine the probability of two objects being nearest neighbors, and accordingly creating new 2- or 3- dimensional coordinates that reflect these probabilities (van der Maaten & Hinton, 2008). Importantly, our t-SNE embeddings do retain relative relationships between objects such that similar posts with similar embeddings, and therefore content, will be located closely together.
+                </p>
+
+                <h3>Logistic Ridge Regression</h3><p>
+                  To test whether 'r/proED' posts are distinct from other subreddits, a logistic ridge regression classifying posts (as belonging to 'r/proED' or to other ED subreddits) using the 300-dimensional post embeddings was trained on data from before 'r/proED''s closing. A ridge regression was used to prevent overfitting and multicollinearity, and importantly, to retain all 300 dimensions of the post embeddings (Mcdonald, 2009). It was important to retain all 300 dimensions, as each post is represented by their totality. Ridge regression prevents overfitting when using a high number of predictors by applying a penalty, specified by a parameter lambda, which is found through iterative partitioning and fitting of training data. For each model, 10 iterations were used to find appropriate lambda values.</p>
+
+                  <h3>Model Cross-validation</h3><p> Using a process similar to k-fold cross-validation, 16 iterations of the logistic ridge regression model were run. Each iteration used a unique sample of posts from ‘r/proED’ to train the model. In each iteration, the whole population of posts from the other ED subreddits before ‘r/proED’’s closing was used (N = 2,679). By using this process and sixteen samples, we were able to use all of our data from before ‘r/proED’’s closing and validate that our model performance is not resultant of a particular sample of ‘r/proED’ posts.</p>
+               </div>
+              <p></p>
+              <button type="button" class="collapsible" style="z-index: +1">Results</button>
+              <div class="content">
+                 <h3>Sampling before r/proED's closing</h3>
+                 <p>Initial exploratory data analyses and visualizations exclusively use subreddit posts from before 'r/proED''s closing. In this timeframe, there are many more 'r/proED' posts (N = 45,193) than from other subreddits (N = 2,679). Therefore, we sampled from 'r/proED' to match the population of posts from other subreddits, yielding a total of 5,358 posts. This balancing is necessary for clarity and for creating unbiased models.</p>
+
+                 <h3>Word Frequency and JSD Contribution</h3>
+                 <p>Many of the most frequent terms are shared between 'r/proED' and the other ED subreddits, such as ‘weight’, ‘feel’, and ‘food’ (Figure 1). However, some notable differences are that medical terms (e.g. 'anorexia', 'bulimia') and words related to recovery ('healthy', 'treatment') are among the most frequent terms in the other ED subreddits, but not in 'r/proED'. This suggests that recovery is a more prevalent discussion in other ED subreddits, but possibly missing from 'r/proED'.</p>
+                 <p>To explore a measure more informative than simple frequency, we looked to Jensen-Shannon Divergence (JSD). In our context, probability distributions were drawn from the probabilities of individual word probabilities in the posts from 'r/proED', and compared to their probabilities to be present in the other ED subreddits. Therefore, we can examine the individual JSD contributions of each word, where we observed that some of the most differentiating or discriminating words included 'treatment', 'recovery', 'healthy', and 'advice' (Figure 2). </p><p>Put another way, the presence of words related to recovery are a strong indicator of whether a post belongs to ‘r/proED’ or the other ED subreddits. This further supports our observation in the simple word frequencies that 'r/proED' posts are potentially missing discussions around recovery.</p>
+
+                 <h3>LSA Topics</h3>
+                 <p>We performed LSA with no a priori expectations about the number or type of topics that would appear. Therefore, a number of dimensions were tested. The most coherent result was from using 4 dimensions, which we interpreted as the following topics: X1: expressions of struggle, X2: advice seeking, X3: recovery & treatment, and X4: random/uncategorizable. While every post scored on these 4 dimensions to some degree, we assigned each post a topic according to its highest scoring dimension. These topic assignments are used in our subsequent t-SNE Visualizations to characterize differences in topic prevalence between ‘r/proED’ and other ED subreddits before the November 2018 closing.</p>
+
+                 <h3>t-SNE Visualizations</h3>
+                 <p>The visualizations of t-SNE embeddings, which are the dimensionality reduced post embeddings, show distinct grouping between 'r/proED' content distinct from other subreddits (Figure 3, left). When these embeddings are colored by topic, the most notable observation is that none of the topics appear exclusive to either 'r/proED' or the other subreddits. There is some suggestion that the topic 'Advice Seeking' is more prevalent in other subreddits, based on estimated area correspondence, however this claim needs to be further investigated.</p>
+
+                 <h3>Logistic Ridge Regression</h3>
+                 <p>Across 16 iterations of our logistic ridge regression model, the average -log(lambda) penalty used was 9.47, 95% CI [9.22, 9.72]. The accuracy of the model for classifying the training data was on average 87.33%, 95% CI [86.85, 87.82]. Each iteration of the model was tested using a unique sample of data from after ‘r/proED’’s closing. This testing data sample was drawn such that there 500 observations from each of the other ED subreddits (N = 1500). The model was highly accurate in classifying these posts, yielding an average accuracy of 97.80%, 95% CI [0.9773, 0.9785]. Overall, from these results, we can claim that using post embeddings alone, which represent post content, posts can be discriminated into belonging to 'r/proED' or to other subreddits. When the classification of the testing data was broken into individual subreddits, as expected from our t-SNE visualizations, posts from 'r/EDAnonymous' was misclassified at a higher rate (11.94%, 95% CI [0.1135, 0.1252]) than posts from 'r/EatingDisorders' (3.80%, 95% CI [0.0354, 0.0406]) and 'r/fuckeatingdisorders' (7.93%, 95% CI [0.0754, 0.0831]).</p>
+              </div>
+              <p></p>
+              <button type="button" class="collapsible" style="z-index: +1">Conclusions</button>
+              <div class="content">
+               <h3> Did 'r/proED' provide a content niche?</h3><p>
+               Regarding the uniqueness of 'r/proED''s post content, from t-SNE embedding visualizations from before its closing, we saw a distinct separation of 'r/proED' posts from other subreddit posts (Figure 3). Additionally, a consistent finding, both in word-level observations and in the LSA topic modeling, was that 'r/proED' lacked verbiage and discussions about advice seeking, recovery, treatment, and mental health (Figure 2). Finally, our logistic regression's ability to discriminate with high accuracy 'r/proED' posts from other subreddits, using post embeddings alone, at all timeframes also speaks to 'r/proED''s distinctness. Therefore, when ‘r/proED’ was closed, questions about where those individuals or discussions moved to looms large and remains open.</p>
+
+               <h3>Was 'r/proED''s content more harmful?</h3><p>
+               By virtue of omitting helpful content about recovery and treatment, 'r/proED' was perhaps more harmful or dangerous than its counterparts. In this study, aside from unsupervised topic modeling (LSA), there was insufficient exploration of post content to make firmer conclusions. In later sections, we discuss ways to address this question of content and harm more robustly.</p>
+
+               <h3>Did other subreddits change to fill the gap left by 'r/proED'?</h3><p>
+               From the t-SNE embedding visualizations from after 'r/proED''s closing, previous distinctiveness between 'r/proED' and our other subreddits of interest disappeared. When investigating which subreddits overlapped most with 'r/proED' content, 'r/EDAnonymous' emerged as the space where this new, similar content is being generated. While our model continued to accurately classify new data, the highest misclassification rate belonged to 'r/EDAnonymous', further suggesting its similarity to 'r/proED'.</p>
+
+               <h3>Limitations and Future Directions</h3><p>
+               There are many potential ways to bolster and extend the findings observed here. Most pressingly, to better answer whether a post or content is harmful or not, it would be both more useful and more clinically valid to use supervised topic modeling, as opposed to the unsupervised LSA used here. There are many ways to begin generating the topics for supervised modeling. For instance, we might recruit clinical professionals to provide exemplar helpful or harmful texts, potentially from diaries or transcripts from individuals in recovery & treatment. Additionally, we may ask these clinicians to provide expected topics, or to partially categorize some posts with which we can extrapolate to new data using subjective raters or unsupervised methods. Having these clinically informed starting points will be crucial for future work researching eating disorders using big data.</p>
+
+               <h3>Final Thoughts</h3><p>
+               Importantly, we do not wish to frame the content, creation, or members of these subreddits as deliberately engaging in or supporting maladaptive behaviors. We recognize a need for open and honest spaces for people to discuss their experiences with EDs. This study’s primary aim was to investigate the consequences of the closing down of one of the largest online communities for discussing EDs. The effects of this closing were potentially amplified by the COVID-19 pandemic, which itself caused different kinds of closings. For many, the in-person support and professional support systems that those with EDs depend upon became inaccessible or insufficient due to the circumstances. The results found here suggest that content from the closed community did not disappear entirely and we point to specific sites for further investigation. Perhaps those discussions moved to platforms with less moderation or have become more covert. In any case, the bottom line is that people with EDs will continue to seek platforms to have these candid discussions. The focus should not lie in curbing the use or existence of online communities, rather, needs to shift towards means for appropriate moderation, and how researchers and clinicians can leverage and cultivate healthy engagement in these online spaces.<p>
+               </div>
+
+
+            <div id="footer">
+                <img src="/imgs/porch_reader.jpg" alt="">
+            </div>
+            <div class="clearer"></div>
+        </div>
+
+        <script>
+         var coll = document.getElementsByClassName("collapsible");
+         var i;
+
+         for (i = 0; i < coll.length; i++) {
+           coll[i].addEventListener("click", function() {
+             this.classList.toggle("colactive");
+             var content = this.nextElementSibling;
+             if (content.style.display === "block") {
+               content.style.display = "none";
+             } else {
+               content.style.display = "block";
+             }
+           });
+         }
+         </script>
+    </body>
+</html>
