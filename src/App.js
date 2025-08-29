@@ -68,6 +68,7 @@ function App() {
   return (
     <div className="App">
       <base target="_blank"></base>
+      <title>Benny Nguyen</title>
       <div className="top-spacer" />
       <div className="content">
         <div className="sticky">
