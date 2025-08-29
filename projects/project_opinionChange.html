@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Opinion Change Project">
+        <meta name="keywords" content="cogsci, benny, nguyen, benny cogsci, bennycogsci, projects, portfolio">
+        <meta name="author" content="Benny Nguyen">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./project.css">
+    </head>
+
+    <body>
+        <div id="page-container">
+            <h2 id="title">Opinion Change Blindness using Manipulated Virtual Selves</h2>
+            <button type="button" class="collapsible" style="z-index: +1">Aims & Question</button>
+            <div class="content" style="display: block;">
+                <p>This project leveraged virtual agents to explore change blindness. Participants reported their opinion on the issue 'Should We Be Able to Delete Our Bad Memories?' and were shown a version of themselves, facial movements projected onto a virtual agent and manipulated audio, and asked to rate their agreement with their past selves.</p>
+                <p>The manipulated audio was editted as to flip their viewpoint on the issue.</p>
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Conclusion & Outcomes</button>
+            <div class="content" style="display: block;">
+                <p>We did not observe opinion change blindness, where participants agreed with the manipulated version of themselves.</p><p><strong>
+                  Interestingly, this effect was strongest for individuals who expressed high levels of opinion confidence in both sessions (while giving the initial interview, and after viewing the manipulated self).</strong>
+                </p>
+                <p>This presence of this opinion change blindness is concerning and of import in a digital age where manipulated depictions of our own and others' likeness are increasingly prevalent and possibly used to disseminate misinformation or influence public perception.</p>
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Figures</button>
+            <div class="content">
+              <h3>Results</h3>
+              <img class="projectFig" src="../images/opinionChange_f1.png">
+              <p>Top left: Distribution of participant report of agreement with the video of their manipulated-self. Top right: Distribution of participant opinion confidence change between experimental sessions. The mean, -27.71, is negative, indicating participants were less confident after viewing the manipulated-self video. Bottom left: Distribution of participant opinion change, in the manipulated direction. Negative values represent participants becoming more extreme in their opinion, as compared to their stance in the first experimental session. Bottom right: Correlation matrix of key measures.</p>
+              
+              <h3>Interaction between Opinion Change and Confidence Levels</h3>
+              <img class="projectFig" src="../images/opinionChange_f3.png">
+              <p>Opinion Change by Post Confidence (2nd Session) grouped by Pre-Confidence Groups (1st Session).</p>
+              
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Experiment Information</button>
+            <div class="content">
+              <h3>Participants</h3>
+              <p>Twenty-four participants were recruited from the University of California, Merced and compensated with course-credit.</p>
+              <h3>Agreement Rating Screen</h3>
+              <img class="projectFig" src="../images/opinionChange_f2.png">
+              <p>Example participant screen in the movement assignment task where participants viewed two identical heads, moving and speaking, and were asked to attribute the speech to one head.</p>
+              <h3>Protocol</h3>
+              <p>This experiment was conducted in 2 sessions. In the first session, participants viewed videos pertaining to the issue and then were surveyed and video recorded on their personal opinion. Before the second session, researchers projected participants' facial movements onto a virtual agent and manipulated the audio to flip participant opinion. In the second session, participants were shown this video of "themselves" and asked to rate agreement and confidence.</p>
+
+            </div>
+            <a href="http://www.bennycogsci.github.io"><button id="returnButton">Return</button></a>
+        </div>
+
+        <script>
+         var coll = document.getElementsByClassName("collapsible");
+         var i;
+         for (i = 0; i < coll.length; i++) {
+           coll[i].addEventListener("click", function() {
+             this.classList.toggle("colactive");
+             var content = this.nextElementSibling;
+             if (content.style.display == "block") {
+               content.style.display = "none";
+             } else {
+               content.style.display = "block";
+             }
+           });
+         }
+         </script>
+    </body>
+</html>

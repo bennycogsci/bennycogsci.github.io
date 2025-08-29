@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Mouse-Tracking Project">
+        <meta name="keywords" content="cogsci, benny, nguyen, benny cogsci, bennycogsci, projects, portfolio">
+        <meta name="author" content="Benny Nguyen">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./project.css">
+    </head>
+
+    <body>
+        <div id="page-container">
+            <h2 id="title">Temporary disruption in language processing reflected as multiscale temporal discoordination in a recurrent network</h2>
+            <button type="button" class="collapsible" style="z-index: +1">Aims & Question</button>
+            <div class="content" style="display: block;">
+                <p>This project sought to test a new way to use mouse-tracking for studying language comprehension: a continuous real-time report (idiodynamic measure). </p>
+                <p>Moreover, this experiment uniquely used a continuous narrative (~17 minutes) yielding dense mouse-tracking trajectory data. This density enabled analysis of the trajectories' temporal unfolding.</p>
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Conclusion & Outcomes</button>
+            <div class="content" style="display: block;">
+                <p>We were able to capture a difference in comprehension reports, temporally aligned to the end of the sentence manipulation. This is expected as there is a lag to perceiving, recognizing, and physically reporting one's cognitive lapses.</p><p>
+
+                  We also showed a difference in the report recurrence (recurrence quantification analysis) during this key window. This recurrence reflects when the mouse returns to similar positions/pathing. There was less recurrence (in other words, more entropy) in those experiencing a loss of comprehension. This entropy in mouse-tracking trajectory, we argue, is reflective of cognitive load. To construct this argument, we compared these results to activity in recurrent networks.
+                </p>
+                <p><strong>In sum, we validated this idiodynamic measure of language comprehension and demonstrated ways to handle and analyze the resultant data. Moreover, we prove the feasibility and utility of more naturalistic stimuli, such as the long-form narrative used here.</strong></p>
+                <a href="https://www.neuralpress.org/_files/ugd/1dd990_344bb0936be9418caba79ecb4c06f216.pdf">This work was published in the Journal of Multiscale Neuroscience (Fulltext).</a>
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Figures</button>
+            <div class="content">
+              <h3>Temporal Alignment of  (Averaged) Participant Comprehension Report Across Conditions.</h3>
+              <img src="../images/mouse_f1.png">
+              <h3>Recurrence Quantification Analysis of Mouse Trajectory Across Conditions.</h3>
+              <img src="../images/mouse_f2.png">
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Experiment Information</button>
+            <div class="content">
+              <h3>Participants</h3>
+              <p>Fourty-six participants were recruited from the University of California, Merced and compensated with course-credit.</p>
+              <h3>Rating Box</h3>
+              <img src="../images/mouse_f3.png">
+              <p>Participants were presented with this screen and rating box, and asked to fixate on the cross while moving their mouse in the box to reflect their comprehension/understanding level.</p>
+              <h3>Materials</h3>
+              <p>A 17-minute long continous narrative was constructed uniquely for this experiment. For each individual, at five key sentences, a garden-path sentence anomaly was introduced. In analysis, we compared the reports to these anomalies against participants who experienced the control, unmanipulated version of that same sentence, hence, a total of 10 key sentences. The narrative was read using text-to-speech software, Balboa, and editted to be garden-paths using Audacity.</p>
+
+            </div>
+            <a href="http://www.bennycogsci.github.io"><button id="returnButton">Return</button></a>
+        </div>
+
+        <script>
+         var coll = document.getElementsByClassName("collapsible");
+         var i;
+         for (i = 0; i < coll.length; i++) {
+           coll[i].addEventListener("click", function() {
+             this.classList.toggle("colactive");
+             var content = this.nextElementSibling;
+             if (content.style.display == "block") {
+               content.style.display = "none";
+             } else {
+               content.style.display = "block";
+             }
+           });
+         }
+         </script>
+    </body>
+</html>

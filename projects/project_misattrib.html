@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Misattribution Project">
+        <meta name="keywords" content="cogsci, benny, nguyen, benny cogsci, bennycogsci, projects, portfolio">
+        <meta name="author" content="Benny Nguyen">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./project.css">
+    </head>
+
+    <body>
+        <div id="page-container">
+            <h2 id="title">Exploring Opinion Self-Misattribution Bias of Virtual Agent Facial Movements</h2>
+            <button type="button" class="collapsible" style="z-index: +1">Aims & Question</button>
+            <div class="content" style="display: block;">
+                <p>Given general biases towards the self, we asked whether people would be biased towards attributing opinions they agreed with to their own facial movements.</p>
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Conclusion & Outcomes</button>
+            <div class="content" style="display: block;">
+                <p>Participants did not exhibit this self-misattribution bias with regards to movement and opinion. Moreover, participants did not perform above chance in correctly attributing movement to the true speaker suggesting that this movement-opinion alignment perception is not a skill people readily possess.</p>
+            </div>
+            <button type="button" class="collapsible" style="z-index: +1">Experiment Information</button>
+            <div class="content">
+              <h3>Participants</h3>
+              <p>Twenty-four participants were recruited from the University of California, Merced and compensated with course-credit.</p>
+              <h3>Protocol</h3>
+              <p>This experiment was conducted in 2 sessions. In the first session, participants viewed videos pertaining to the issue, 'Is Cancel Culture Toxic?' and then were surveyed and video recorded on their personal opinion. In the second session, participants were shown two busts speaking. One bust was the original speaker, and the other was the participants' own movement. They were asked to determine who was the true speaker, in other words, which movements better aligned with the speech. Participants were shown two sets of pairs, one for each side of the issue.</p>
+
+            </div>
+            <a href="http://www.bennycogsci.github.io"><button id="returnButton">Return</button></a>
+        </div>
+
+        <script>
+         var coll = document.getElementsByClassName("collapsible");
+         var i;
+         for (i = 0; i < coll.length; i++) {
+           coll[i].addEventListener("click", function() {
+             this.classList.toggle("colactive");
+             var content = this.nextElementSibling;
+             if (content.style.display == "block") {
+               content.style.display = "none";
+             } else {
+               content.style.display = "block";
+             }
+           });
+         }
+         </script>
+    </body>
+</html>
